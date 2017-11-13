@@ -6,15 +6,33 @@
     android:layout_height="match_parent"
     tools:context="com.dmb.losmenuses.MainActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#0db5ed"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp" />
+        android:text="Pulsa el Boton"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/im1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/im1"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:layout_marginTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/im1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/ic_dialog_alert"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="showPopup"/>
 
 </android.widget.RelativeLayout>
